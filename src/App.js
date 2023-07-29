@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./Components/Button/Button";
+import InputField from "./Components/InputField/InputField";
+import Task from "./Components/Task/Task";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputField inputType={"text"} title={"type task here..."} />
+      <Button style={"titleActive"} >button</Button>
+      <Button style={"main"} color={"red"}><i className="fa-solid fa-xmark"></i></Button>
+      <Task />
     </div>
   );
 }
