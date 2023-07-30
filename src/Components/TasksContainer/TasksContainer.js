@@ -1,8 +1,16 @@
+import Task from "../Task/Task"
 
 
 const TasksContainer = () => {
   return (
-    <div>TasksContainer</div>
+    <div>
+      <Task content={"go to market"} />
+      <Task content={"go to market"} />
+      <Task content={"go to market"} />
+      <Task content={"go to market"} />
+      <Task content={"go to market"} />
+      <Task content={"go to market"} />
+    </div>
   )
 }
 
